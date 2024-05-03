@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pb.runners.Runner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="ip-192-168-1-13.us-east-2.compute.internal" time="0.0">
+  <properties/>
+  <system-out><![CDATA[17:48:05.216 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/prueba.feature
+17:48:05.355 [Test worker] INFO  - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+17:48:05.359 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@76151740
+17:48:05.362 [Test worker] INFO  - Test Suite Started: Consultar idiomas
+17:48:05.376 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/prueba.feature
+17:48:05.379 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@76151740
+17:48:05.380 [Test worker] INFO  - Test Suite Started: Consultar idiomas
+17:48:10.278 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+17:48:10.409 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+17:48:10.425 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@7e2a76be
+17:48:10.428 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Consultar idiomas:Consultar idiomas disponibles de la pagina
+17:48:10.429 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@7e2a76be: Generating report for test outcome: Consultar idiomas:Consultar idiomas disponibles de la pagina
+17:48:10.440 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Consultar idiomas disponibles de la pagina to file /Users/david.moreno/Documents/PRUEBA/PruebaSerenityRest/target/site/serenity/c7e88fc06acd1fe67b9a453ce0a81025b01ba344cfcf496398c6c48785ea30dc.json (using temp file /Users/david.moreno/Documents/PRUEBA/PruebaSerenityRest/target/site/serenity/c7e88fc06acd1fe67b9a453ce0a81025b01ba344cfcf496398c6c48785ea30dc.jsond823398a-c848-49e5-9207-176c6db6ceac)
+17:48:10.468 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Consultar idiomas:Consultar idiomas disponibles de la pagina done
+17:48:10.468 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+17:48:10.469 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 43 ms
+17:48:10.469 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@58e5fbe5
+17:48:10.470 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Consultar idiomas:Consultar idiomas disponibles de la pagina
+17:48:10.470 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@58e5fbe5: Generating report for test outcome: Consultar idiomas:Consultar idiomas disponibles de la pagina
+17:48:10.984 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Consultar idiomas:Consultar idiomas disponibles de la pagina done
+17:48:10.984 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+17:48:10.984 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 515 ms
+]]></system-out>
+  <system-err><![CDATA[log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+?[32m?[1m┌───────────────────────────────────────────────────────────────────────────────────┐?[0m
+?[32m?[1m│?[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m│?[0m
+?[32m?[1m│?[0m Activate publishing with one of the following:                                    ?[32m?[1m│?[0m
+?[32m?[1m│?[0m                                                                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m│?[0m
+?[32m?[1m│?[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m│?[0m
+?[32m?[1m│?[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m│?[0m
+?[32m?[1m│?[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m│?[0m
+?[32m?[1m│?[0m                                                                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m│?[0m
+?[32m?[1m│?[0m                                                                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m Disable this message with one of the following:                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m                                                                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m│?[0m
+?[32m?[1m│?[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m│?[0m
+?[32m?[1m└───────────────────────────────────────────────────────────────────────────────────┘?[0m
+]]></system-err>
+</testsuite>
