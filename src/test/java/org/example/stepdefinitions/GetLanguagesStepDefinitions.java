@@ -21,7 +21,7 @@ public class GetLanguagesStepDefinitions {
 
     @Given("that user want to know available languages")
     public void thatUserWantToKnowAvailableLanguages() {
-        OnStage.theActorCalled("FELIPE").whoCan(CallAnApi.at("https://reqres.in/api"));
+        OnStage.theActorCalled("FELIPE").whoCan(CallAnApi.at("http://localhost:3000"));
     }
 
     @When("he gets the languages using the API")
