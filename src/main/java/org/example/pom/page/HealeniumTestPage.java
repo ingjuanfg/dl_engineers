@@ -1,4 +1,4 @@
-package org.example.page;
+package org.example.pom.page;
 
 import net.serenitybdd.annotations.DefaultUrl;
 import net.serenitybdd.core.annotations.findby.FindBy;
