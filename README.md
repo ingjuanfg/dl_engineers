@@ -31,6 +31,11 @@ Efficiency: Automation reduces the time and effort required for translating and 
 ### Accuracy: AI ensures translations are accurate and up-to-date.
 Enhanced User Experience: Users can access information in their preferred language, improving the overall experience.
 
+### Flow IA Test UI
+
+![FlowIA](https://i.ibb.co/yWKFc0P/Flow-IATest.png)
+
+
 Implementation Steps:
 
 - Requirement Definition: Specify target languages, webpages to automate, and functionalities needed.
