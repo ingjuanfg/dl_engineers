@@ -6,10 +6,10 @@ import net.serenitybdd.junit5.SerenityJUnit5Extension;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
-import org.example.steps.TestEnvSteps;
+import org.example.pom.steps.TestEnvSteps;
 
 @ExtendWith(SerenityJUnit5Extension.class)
-class FindAndHealElementTest {
+class FindAndHealElementPOMTest {
 
     @Managed
     WebDriver driver;
@@ -18,7 +18,7 @@ class FindAndHealElementTest {
     TestEnvSteps testEnvSteps;
 
     @Test
-    public void googleSearchPassTest() {
+    public void changeElementToHeal() {
         testEnvSteps.openPage();
         testEnvSteps.findElement();
         testEnvSteps.clickOnSubmit();

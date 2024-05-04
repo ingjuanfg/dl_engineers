@@ -1,11 +1,11 @@
-package org.example.steps;
+package org.example.pom.steps;
 
 
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.annotations.Step;
 import net.thucydides.core.pages.Pages;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.example.page.HealeniumTestPage;
+import org.example.pom.page.HealeniumTestPage;
 
 public class TestEnvSteps extends ScenarioSteps {
 
