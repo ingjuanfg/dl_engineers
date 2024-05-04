@@ -1,8 +1,14 @@
 package org.example.modelo.data;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class InputSearchLocationItem{
 	private String portugese;
 	private String german;
@@ -10,23 +16,4 @@ public class InputSearchLocationItem{
 	private String spanish;
 	private String english;
 
-	public String getPortugese(){
-		return portugese;
-	}
-
-	public String getGerman(){
-		return german;
-	}
-
-	public String getFrench(){
-		return french;
-	}
-
-	public String getSpanish(){
-		return spanish;
-	}
-
-	public String getEnglish(){
-		return english;
-	}
 }
