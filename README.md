@@ -59,7 +59,7 @@ Enhanced User Experience: Users can access information in their preferred langua
 
 ### Flow IA Test UI
 
-![FlowIA](https://i.ibb.co/yWKFc0P/Flow-IATest.png)
+![FlowIA](https://i.postimg.cc/HWb45Y2s/dl-engineers.jpg)
 
 ### How to run Healenium
 
