@@ -13,7 +13,6 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class GetLanguages implements Task {
 
-
     public static GetLanguages on() {
         return instrumented(GetLanguages.class);
     }
@@ -22,16 +21,12 @@ public class GetLanguages implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
-                Get.resource("/users/"));
-
+                Get.resource("/posts"));
         Response responseBody = OnStage.theActorInTheSpotlight().asksFor(LastResponse.received());
         actor.remember("RESPONSE_BODY",responseBody.body().asString());
         System.out.println(responseBody.body().
                 asString());
         RsConsulta rsConsulta = (RsConsulta) JsonUtil.stringToObject(responseBody.body().asString(), RsConsulta.class);
-        System.out.println(rsConsulta.getTotal() + "total hola");
-
+        System.out.println(rsConsulta);
     }
-
-
 }

@@ -1,0 +1,88 @@
+{
+  "languages": {
+    "label_title_page": [
+      { "english": "Engineers" },
+      { "spanish": "Ingenieros"},
+      { "french": "Ingenieurs"},
+      { "german": "Ingenieure"},
+      { "portugese": "Engenheiros"}
+    ],
+    "input_login_user": [
+      { "english": "Enter your username" },
+      { "spanish": "Ingresa tu usuario" },
+      { "french": "Entrez votre nom d'utilisateur" },
+      { "german": "Geben Sie Ihren Benutzernamen ein" },
+      { "portugese": "Digite seu nome de usuário" }
+    ],
+    "input_login_password": [
+      { "english": "Enter your password" },
+      { "spanish": "Ingresa tu clave" },
+      { "french": "Entrez votre mot de passe" },
+      { "german": "Geben Sie Ihr Passwort ein" },
+      { "portugese": "Digite sua senha" }
+    ],
+    "button_login": [
+      { "english": "Log In" },
+      { "spanish": "Autenticarse" },
+      { "french": "Se connecter" },
+      { "german": "Einloggen" },
+      { "portugese": "Entrar" }
+    ],
+    "input_register_name": [
+      { "english": "Enter your name" },
+      { "spanish": "Ingresa tu nombre" },
+      { "french": "Entrez votre nom" },
+      { "german": "Geben Sie Ihren Namen ein" },
+      { "portugese": "Digite seu nome" }
+    ],
+    "input_register_email": [
+      { "english": "Enter your email" },
+      { "spanish": "Ingresa tu correo electrónico" },
+      { "french": "Entrez votre email" },
+      { "german": "Geben Sie Ihre E-Mail-Adresse ein" },
+      { "portugese": "Digite seu email" }
+    ],
+    "input_register_password": [
+      { "english": "Enter a password" },
+      { "spanish": "Ingresa una contraseña" },
+      { "french": "Entrez un mot de passe" },
+      { "german": "Geben Sie ein Passwort ein" },
+      { "portugese": "Digite uma senha" }
+    ],
+    "button_register": [
+      { "english": "Register" },
+      { "spanish": "Registrarse" },
+      { "french": "S'inscrire" },
+      { "german": "Registrieren" },
+      { "portugese": "Registrar-se" }
+    ],
+    "input_search_location": [
+      { "english": "Enter destination" },
+      { "spanish": "Ingresa el destino" },
+      { "french": "Entrez la destination" },
+      { "german": "Geben Sie das Ziel ein" },
+      { "portugese": "Digite o destino" }
+    ],
+    "input_search_checkin_date": [
+      { "english": "Check-in date" },
+      { "spanish": "Fecha de entrada" },
+      { "french": "Date d'arrivée" },
+      { "german": "Anreisedatum" },
+      { "portugese": "Data de check-in" }
+    ],
+    "input_search_checkout_date": [
+      { "english": "Check-out date" },
+      { "spanish": "Fecha de salida" },
+      { "french": "Date de départ" },
+      { "german": "Abreisedatum" },
+      { "portugese": "Data de check-out" }
+    ],
+    "button_search": [
+      { "english": "Search" },
+      { "spanish": "Buscar" },
+      { "french": "Rechercher" },
+      { "german": "Suchen" },
+      { "portugese": "Buscar" }
+    ]
+  }
+}
