@@ -1,23 +1,49 @@
 
-# Scalable Multilingual Website Automation with AI
+# AI and Translations Web Automation
 
 This project aims to develop a scalable solution for automating web pages in different languages using a translation API and AI tools. Automation is achieved through the following steps:
+
+## Tools
+- SerenityBDD
+- Java
+- Gradle
+- Healenium
+- Json Server
+- Docker
+- Screenplay
+- Cucumber
+- Lombok
+- Git
+- Github
+- POM
+- Json
+- Quality Strategies
 
 ## 1. API Query:
 
 The translation API is queried to obtain translations for the webpage content.
 Different translation APIs are supported for flexibility and reliability.
 A caching system is implemented to optimize performance and reduce resource consumption.
+
+### How to run the API
+
+- Go to [language_api](src%2Ftest%2Fresources%2Flanguage_api) 
+- Run in a terminal ```npm install json-server```
+- Then, run ```npx json-server db.json```
+- To verify, open in a browser http://localhost:3000/
+
+
 ## 2. Content Modeling:
 
 The structure and content of the original webpage are analyzed.
 Translated content is transformed to fit the webpage's structure.
 Natural Language Processing (NLP) techniques are used to understand the meaning of the text and translate it accurately and contextually.
+
 ## 3. Webpage Injection:
 
 Translated and modeled content is injected into the webpage.
-JavaScript techniques are used to manipulate the webpage's Document Object Model (DOM).
 Compatibility with different web browsers and devices is ensured.
+
 ## 4. AI-powered Updates:
 
 AI tools are used to detect changes in the original webpage.
@@ -35,6 +61,20 @@ Enhanced User Experience: Users can access information in their preferred langua
 
 ![FlowIA](https://i.ibb.co/yWKFc0P/Flow-IATest.png)
 
+### How to run Healenium
+
+Preconditions: You need Docker installed on your laptop.
+
+- Go to [healenium](healenium)
+- Run in a terminal ```docker compose up -d```
+
+## 5. Test Case for API
+
+To check the test. Please run [RunnerApi.java](src%2Ftest%2Fjava%2Forg%2Fexample%2Frunners%2FRunnerApi.java)
+
+## 6. Test Case for AI
+
+To check the test. Please run [FindAndHealElementTest.java](src%2Ftest%2Fjava%2Forg%2Fexample%2Frunners%2FFindAndHealElementTest.java)
 
 Implementation Steps:
 
@@ -43,50 +83,34 @@ Implementation Steps:
 - Automation Engine Development: Create a software engine to automate API queries, content modeling, and webpage injection.
 - AI Update Implementation: Integrate AI tools to detect webpage changes and update translations accordingly.
 - Testing and Validation: Conduct thorough testing to ensure the solution functions correctly in various scenarios.
-- Deployment and Monitoring: Deploy the solution on target webpages and monitor performance to detect and fix errors.
-Additional Tools:
 
-- Content Management Systems (CMS): Facilitate integration with existing webpages.
-- Analytics Tools: Track solution usage and measure its impact.
+- Additional Tools:
+
+- Analytics Tools: SerenityBDD report. To see it. Please run ```gradle aggregate``` after running the tests.
 
 ## API Reference
+https://www.npmjs.com/package/json-server
 
-#### Get all items
-
-```http
-  GET /api/items
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-
-#### Get item
+#### Get all elements with translations
 
 ```http
-  GET /api/items/${id}
+  GET /languages
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| Parameter | Type     | Description |
+|:----------| :------- |:------------|
+| `NA`      | `string` |             |     
 
-#### add(num1, num2)
+## Report
 
-Takes two numbers and returns the sum.
-
-
-## Running Tests
-
-To run tests, run the following command
-
-```bash
-  npm run test
-```
+![Report1](https://i.postimg.cc/s2JwpVyh/Captura-de-pantalla-2024-05-04-033938.png)
+![Report2](https://i.postimg.cc/d0F5k7MF/Captura-de-pantalla-2024-05-04-033950.png)
+![Report3](https://i.postimg.cc/QxR4D40H/Captura-de-pantalla-2024-05-04-034000.png)
 
 
 ## Authors
 
-- [@aquisuusario](https://www.github.com/aquisuusuario)
+- [@ingjuanfg](https://github.com/ingjuanfg)
 - [@dannybarrientos](https://www.github.com/dannybarrientos)
+- [@DAVIDCHAMI](https://github.com/DAVIDCHAMI)
 

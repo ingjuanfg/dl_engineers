@@ -1,7 +1,6 @@
 package org.example.util;
 
 import com.google.gson.Gson;
-import org.json.JSONObject;
 
 public class JsonUtil {
     private JsonUtil() {

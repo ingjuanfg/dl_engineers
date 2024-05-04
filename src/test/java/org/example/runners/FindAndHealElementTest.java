@@ -24,5 +24,4 @@ class FindAndHealElementTest {
         testEnvSteps.clickOnSubmit();
         testEnvSteps.findElement();
     }
-
 }

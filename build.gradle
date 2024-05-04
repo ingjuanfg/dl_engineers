@@ -1,20 +1,29 @@
-plugins {
-    id 'java'
-}
-
 group = 'org.example'
 version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:4.0.1")
+    }
+}
+
+apply plugin: 'net.serenity-bdd.serenity-gradle-plugin'
+apply plugin: 'java'
 
 ext {
     libs = [
-
             json: "com.googlecode.json-simple:json-simple:${jsonsimpleVersion}",
-
             test: [
                     serenity: [
                             core               : "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
@@ -30,7 +39,6 @@ ext {
                     assertj : "org.assertj:assertj-core:${assertJVersion}",
                     hamcrest: "org.hamcrest:hamcrest-all:${hamcrestVersion}",
                     hamcrest: "org.hamcrest:hamcrest:${hamcrestVersion}"
-
             ]
     ]
 }
@@ -38,7 +46,6 @@ ext {
 
 dependencies {
 
-    //libs.logback,
     implementation libs.test.serenity.core,
             libs.test.serenity.screenplay,
             libs.test.serenity.junit,
@@ -51,46 +58,20 @@ dependencies {
             libs.test.hamcrest,
             libs.json
 
-    implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}",
-            "com.fasterxml.jackson.module:jackson-module-parameter-names:${jacksonVersion}",
-            "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:${jacksonVersion}",
-            "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${jacksonVersion}",
-            "io.rest-assured:json-schema-validator:${schemaValidatorVersion}",
-            "com.esotericsoftware.yamlbeans:yamlbeans:${yamlbeansVersion}",
-            "com.github.javafaker:javafaker:${javafakerVersion}",
-            "org.aeonbits.owner:owner:${aeonbitsOwnerVersion}",
-            "com.google.guava:guava:${googleGuavaVersion}",
-            "ch.qos.logback:logback-classic:${logbackVersion}",
-            "com.google.code.gson:gson:${googleGsonVersion}",
-            "org.apache.logging.log4j:log4j-api:${slf4jApiVersion}"
-
+    implementation "io.rest-assured:json-schema-validator:${schemaValidatorVersion}"
     implementation 'com.googlecode.json-simple:json-simple:1.1.1'
-    implementation 'org.json:json:20180813'
-    implementation 'org.bouncycastle:bcpkix-jdk15on:1.60'
-    implementation 'org.apache.commons:commons-text:1.6'
-    implementation 'org.bouncycastle:bcprov-jdk15on:1.60'
-    implementation 'org.bouncycastle:bcprov-ext-jdk15on:1.60'
-    implementation 'com.codepine.api:testrail-api-java-client:2.0.2'
     testImplementation "net.serenity-bdd:serenity-junit5:4.0.1"
     testImplementation "org.junit.jupiter:junit-jupiter-api:5.10.0"
     testImplementation "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}",
             "junit:junit:${junitVersions}",
             "org.assertj:assertj-core:${assertJVersion}",
             "net.serenity-bdd:serenity-junit:${serenityCoreVersion}"
-    testImplementation(group: 'au.com.dius.pact.provider', name: 'junit5', version: '4.4.0-beta.0') {
-        exclude group: 'org.codehaus.groovy', module: 'groovy'
-    }
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
-    implementation 'org.bouncycastle:bcpkix-jdk15on:1.52'
 }
-
 
 tasks.withType(Test).configureEach {
     systemProperties System.getProperties()
-    System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
-    systemProperty "cucumber.url", System.getProperty("cucumber.url")
-    systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
     include '**/Runner**.class'
     testLogging {
         events "failed", "passed", "skipped"
