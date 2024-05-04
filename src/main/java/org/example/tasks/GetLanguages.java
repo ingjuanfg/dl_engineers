@@ -6,13 +6,12 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.rest.interactions.Get;
 import net.serenitybdd.screenplay.rest.questions.LastResponse;
-import org.example.modelo.RsConsulta;
+import org.example.modelo.data.RsData;
 import org.example.util.JsonUtil;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class GetLanguages implements Task {
-
 
     public static GetLanguages on() {
         return instrumented(GetLanguages.class);
@@ -22,16 +21,10 @@ public class GetLanguages implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
-                Get.resource("/users/"));
-
+                Get.resource("/posts"));
         Response responseBody = OnStage.theActorInTheSpotlight().asksFor(LastResponse.received());
-        actor.remember("RESPONSE_BODY",responseBody.body().asString());
-        System.out.println(responseBody.body().
-                asString());
-        RsConsulta rsConsulta = (RsConsulta) JsonUtil.stringToObject(responseBody.body().asString(), RsConsulta.class);
-        System.out.println(rsConsulta.getTotal() + "total hola");
-
+        RsData rsConsulta = (RsData) JsonUtil.stringToObject(responseBody.body().asString(), RsData.class);
+        actor.remember("RESPONSE_BODY",rsConsulta);
+        System.out.println(rsConsulta);
     }
-
-
 }

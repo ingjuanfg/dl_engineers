@@ -13,9 +13,9 @@ repositories {
 ext {
     libs = [
 
-            json : "com.googlecode.json-simple:json-simple:${jsonsimpleVersion}",
+            json: "com.googlecode.json-simple:json-simple:${jsonsimpleVersion}",
 
-            test    : [
+            test: [
                     serenity: [
                             core               : "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
                             junit              : "net.serenity-bdd:serenity-junit:${serenityCoreVersion}",
@@ -23,7 +23,7 @@ ext {
                             screenplayWebdriver: "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}",
                             cucumber           : "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}",
                             rest               : "net.serenity-bdd:serenity-rest-assured:${serenityCoreVersion}",
-                            serenityRest         : "net.serenity-bdd:serenity-screenplay-rest:${serenityCoreVersion}"
+                            serenityRest       : "net.serenity-bdd:serenity-screenplay-rest:${serenityCoreVersion}"
                     ],
                     junit   : "junit:junit:${junitVersion}",
                     junit   : "org.junit.jupiter:junit-jupiter-api:${junitVersion}",
@@ -49,8 +49,6 @@ dependencies {
             libs.test.junit,
             libs.test.assertj,
             libs.test.hamcrest,
-            //  libs.log4j,
-            // libs.lombok,
             libs.json
 
     implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}",
@@ -79,13 +77,9 @@ dependencies {
             "org.assertj:assertj-core:${assertJVersion}",
             "net.serenity-bdd:serenity-junit:${serenityCoreVersion}"
 
-    //Otras utilidades
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
     implementation 'org.bouncycastle:bcpkix-jdk15on:1.52'
-
-    // testCompileOnly libs.lombok
-    //testAnnotationProcessor libs.lombok
 }
 
 
@@ -95,17 +89,12 @@ tasks.withType(Test).configureEach {
     systemProperty "cucumber.url", System.getProperty("cucumber.url")
     systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
     include '**/Runner**.class'
-    // def forks = 2
-    // println "The Maximum parallel is $forks"
-    //maxParallelForks = forks
     testLogging {
         events "failed", "passed", "skipped"
         exceptionFormat = 'full'
     }
     test.outputs.upToDateWhen { false }
 }
-
-
 
 
 tasks.withType(JavaCompile) {
