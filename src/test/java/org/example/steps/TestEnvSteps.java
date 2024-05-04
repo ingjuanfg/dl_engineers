@@ -2,7 +2,7 @@ package org.example.steps;
 
 
 import net.serenitybdd.screenplay.actions.Open;
-import net.thucydides.core.annotations.Step;
+import net.serenitybdd.annotations.Step;
 import net.thucydides.core.pages.Pages;
 import net.thucydides.core.steps.ScenarioSteps;
 import org.example.page.HealeniumTestPage;

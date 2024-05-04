@@ -1,11 +1,9 @@
 package org.example.page;
 
-
-
+import net.serenitybdd.annotations.DefaultUrl;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
-import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.WebDriver;
 
 @DefaultUrl("https://elenastepuro.github.io/test_env/index.html")
@@ -28,5 +26,4 @@ public class HealeniumTestPage extends PageObject {
     public void clickSubmit() {
         submit.click();
     }
-
 }
